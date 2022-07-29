@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+ body{
+    background-color: rgb(14, 13, 13);
+    font-family:sans-serif;
+ }
+ .nav-head{
+   position: fixed;
+   background-color: rgba(0, 0, 0, 0.418);
+   z-index: 1;
+  
+ }
+ .nav-heading{
+   color: red;
+ }
+ 
+ .row_posters{
+   display: flex;
+   overflow-y: hidden;
+   overflow-x: scroll;
+   padding: 20px;
+   
+}
+.row_posters::-webkit-scrollbar{
+   display: none;
+}
+.row{
+   margin-left: 20px;
+}
+.row-title{
+   color: white;
+   font-weight: bold;
+   font-size: 25px;
+}
+.row_poster{
+   width: 100%;
+   object-fit: contain;
+   max-height: 200px;
+   margin-right: 10px;
+   transition: transform 450ms;
+}
+.row_poster:hover{
+   transform: scale(1.08);
+}
+.row_posterLarge{
+   max-height: 300px;
+}
+.row_posterLarge:hover{
+   transform: scale(1.09);
+}
